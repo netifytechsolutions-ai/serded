@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Success</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Top message */
+.top-message {
+    position: absolute;
+    top: 20px;
+    background: #1f2a44;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* Main container */
+.container {
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Green check circle */
+.check-circle {
+    width: 90px;
+    height: 90px;
+    background: #8bc34a;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+
+/* Title */
+.title {
+    color: #4CAF50;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+/* Text */
+.text {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Loader box */
+.loader-box {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #4CAF50;
+}
+
+/* Simple loader */
+.loader {
+    border: 4px solid #ddd;
+    border-top: 4px solid #8bc34a;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Button */
+.btn {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #eee;
+    cursor: pointer;
+}
+</style>
+
+<!-- ✅ AUTO REDIRECT AFTER 5 SECONDS -->
+<script>
+setTimeout(function(){
+    window.location.href = "step3.php"; // 🔥 CHANGE THIS to your next page
+}, 3000);
+</script>
+
+</head>
+
+<body>
+
+<div class="top-message">
+    🎉 ✅ Codsiga si guul leh <br>
+             ayaa loo gudbiyay!
+</div>
+
+<div class="container">
+
+    <div class="check-circle">✓</div>
+
+    <div class="title">Codsiga Amaahda waa la <br>
+            gudbiyay</div>
+
+    <div class="text">
+        Codsiga gargaarka si guul leh ayaa loo gudbiyay. Fadlan sug ansixinta.<br><br>
+        Waxaad heli doontaa fariin xaqiijin ah. Hadda, soco Waafi.
+    </div>
+
+    <div class="loader-box">
+        <div class="loader"></div>
+        Ku celinaya galitaanka Waafi .. ilbiriqsi...
+    </div>
+
+    <button class="btn">Tag Galitaanka Hadda</button>
+
+</div>
+
+</body>
+</html>

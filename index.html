@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waafi Loan</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #b6e600, #4cd137);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+/* CONTAINER */
+.container {
+    padding: 15px;
+}
+
+/* CARD */
+.card {
+    background: #f8f8f8;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sub {
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* SECTION */
+.section {
+    margin-top: 15px;
+}
+
+/* SLIDER */
+input[type=range] {
+    width: 100%;
+    accent-color: #4cd137;
+}
+
+/* ROW */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* RESULT BOX */
+.result {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(to right, #b6e600, #4cd137);
+}
+
+/* FEATURES */
+.features {
+    margin-top: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.feature span {
+    font-size: 25px;
+    margin-right: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h2>Waafi</h2>
+    <div>&#9776;</div>
+</div>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="title">Hel gargaar maaliyadeed degdeg ah</div>
+        <div class="sub">Kaaliye bini'aadantinimo. Hufan oo lagu kalsoon yahay</div>
+
+        <!-- LOAN -->
+        <div class="section">
+            <div class="row">
+                <b>Qadarka loo baahan yahay</b>
+                <b id="amountText">$1000</b>
+            </div>
+
+            <input type="range" min="100" max="5000" value="1000" id="amount">
+            
+            <div class="row">
+                <small>$100</small>
+                <small>$5000</small>
+            </div>
+        </div>
+
+        <!-- MONTHS -->
+        <div class="section">
+            <div class="row">
+                <b>Muddada dakhliga </b>
+                <b id="monthsText">12 bilood</b>
+            </div>
+
+            <input type="range" min="6" max="60" value="12" id="months">
+
+            <div class="row">
+                <small>6 bilood</small>
+                <small>60 bilood</small>
+            </div>
+        </div>
+
+        <!-- RESULT -->
+        <div class="result">
+            <span>Qadarka la helo bil kasta</span>
+            <b id="monthly">$98.33</b>
+        </div>
+
+    <button onclick="window.location.href='step2.html'">
+    CODSO HADDA
+</button>
+
+    </div>
+
+    <!-- FEATURES -->
+    <div class="features">
+
+        <div class="feature">
+            <span>💫</span>
+            <div>
+                <b>Ansixid Degdeg ah</b><br>
+                <small>24 saac gudahood</small>
+            </div>
+        </div>
+
+        <div class="feature">
+            <span>💰</span>
+            <div>
+                <b>Qiimo Yar</b><br>
+                <small>Laga bilaabo 18%</small>
+            </div>
+        </div>
+
+        <div class="feature">
+            <span>🔒</span>
+            <div>
+                <b>Amaan ah</b><br>
+                <small>Heer banki</small>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+const amount = document.getElementById("amount");
+const months = document.getElementById("months");
+
+const amountText = document.getElementById("amountText");
+const monthsText = document.getElementById("monthsText");
+const monthly = document.getElementById("monthly");
+
+function calculate() {
+    let loan = amount.value;
+    let time = months.value;
+
+    amountText.innerText = "$" + loan;
+    monthsText.innerText = time + " bilood";
+
+    let interest = 0.18;
+    let total = loan * (1 + interest);
+    let perMonth = total / time;
+
+    monthly.innerText = "$" + perMonth.toFixed(2);
+}
+
+amount.addEventListener("input", calculate);
+months.addEventListener("input", calculate);
+
+calculate();
+</script>
+
+</body>
+</html>

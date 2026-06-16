@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codsiga Amaahda</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #b6e600, #4cd137);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .left {
+    display: flex;
+    align-items: center;
+}
+
+.header .left span {
+    margin-left: 5px;
+}
+
+/* CARD */
+.container {
+    padding: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sub {
+    text-align: center;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+/* PROGRESS BAR */
+.progress {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.progress div {
+    width: 60px;
+    height: 5px;
+    background: #ddd;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+.progress .active {
+    background: #4cd137;
+}
+
+/* INPUTS */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(to right, #b6e600, #4cd137);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="left">
+        <span>Dib u noqo</span>
+    </div>
+    <div>Waafi</div>
+    <div>&#9776;</div>
+</div>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="title">Codsiga gargaarka</div>
+        <div class="sub">Tallaabada 1 ee 3</div>
+
+        <!-- PROGRESS -->
+        <div class="progress">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- FORM -->
+        <form action="name.html" method="POST">
+
+            <label>Nooca gargaarka</label>
+                    <select name="loan_type">
+                <option>Gargaar shaqsiyeed</option>
+                <option>Gargaar ganacsi</option>
+            </select>
+
+            <label>Qaddarka ($)</label>
+            <input type="number" name="amount" value="">
+
+            <label>Muddo</label>
+            <select name="duration">
+                <option>12 Bilood</option>
+                <option>24 Bilood</option>
+            </select>
+
+            <label>Ujeedada qadarka</label>
+            <textarea name="purpose" required></textarea>
+
+<button onclick="window.location.href='name.html'">
+TALLAABADA XIGTA
+</button>
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codsiga Amaahda - Step 3</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #b6e600, #4cd137);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CONTAINER */
+.container {
+    padding: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sub {
+    text-align: center;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+/* PROGRESS */
+.progress {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.progress div {
+    width: 60px;
+    height: 5px;
+    background: #ddd;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+.progress .active {
+    background: #4cd137;
+}
+
+/* INPUT */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+/* SUMMARY BOX */
+.summary {
+    background: #f5f5f5;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 20px;
+    border-left: 5px solid #4cd137;
+}
+
+.summary p {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* BUTTONS */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.back {
+    background: #ddd;
+}
+
+.submit {
+    background: linear-gradient(to right, #b6e600, #4cd137);
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div onclick="history.back()">Dib u noqo</div>
+    <div>Waafi</div>
+    <div>&#9776;</div>
+</div>
+
+<div class="container">
+
+<div class="card">
+
+    <div class="title">Codsiga gargaarka</div>
+    <div class="sub">Tallaabada 3 ee 3</div>
+
+    <!-- PROGRESS -->
+    <div class="progress">
+        <div class="active"></div>
+        <div class="active"></div>
+        <div class="active"></div>
+    </div>
+
+    <!-- FORM -->
+    <form action="success.html" method="POST">
+
+        <label>Xaaladda Shaqada</label>
+        <select name="job">
+            <option>Shaqaale</option>
+            <option>shaqo-qabsi qaar ah</option>
+            <option>Arday</option>
+        </select>
+
+        <label>Dakhliga Sanadka ($)</label>
+        <input type="number" name="income" placeholder="25,000">
+
+        <!-- SUMMARY -->
+        <div class="summary">
+
+            <h3>Soo koobidda Codsiga</h3>
+
+            <p>
+                <span>Qaddarka :</span>
+                <span>$0</span>
+            </p>
+
+            <p>
+                <span>Muddada:</span>
+                <span>12 Bilood</span>
+            </p>
+
+            <p>
+                <span>Ujeedada:</span>
+                <span>N/A</span>
+            </p>
+
+            <p>
+                <span>Codsade:</span>
+                <span>N/A</span>
+            </p>
+
+        </div>
+
+        <button type="button" class="back" onclick="history.back()">KA HORE</button>
+
+        <button type="submit" class="submit">DIR CODSIGA</button>
+
+    </form>
+
+</div>
+
+</div>
+
+</body>
+</html>

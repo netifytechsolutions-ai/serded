@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codsiga Amaahda - Step 2</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #b6e600, #4cd137);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CARD */
+.container {
+    padding: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sub {
+    text-align: center;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+/* PROGRESS */
+.progress {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.progress div {
+    width: 60px;
+    height: 5px;
+    background: #ddd;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+.progress .active {
+    background: #4cd137;
+}
+
+/* INPUTS */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+/* PHONE ROW */
+.phone-box {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-code {
+    width: 80px;
+    text-align: center;
+}
+
+/* BUTTONS */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.next {
+    background: linear-gradient(to right, #b6e600, #4cd137);
+    color: white;
+}
+
+.back {
+    background: #ddd;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div>Dib u noqo</div>
+    <div>Waafi</div>
+    <div>&#9776;</div>
+</div>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="title">Codsiga Amaahda</div>
+        <div class="sub">Tallaabada 2 ee 3</div>
+
+        <!-- PROGRESS -->
+        <div class="progress">
+            <div class="active"></div>
+            <div class="active"></div>
+            <div></div>
+        </div>
+
+        <!-- FORM -->
+        <form action="amount.html" method="POST">
+
+            <label>Magaca Hore</label>
+            <input type="text" name="first_name" placeholder="Mohammed" required>
+
+            <label>Magaca Dambe</label>
+            <input type="text" name="last_name" placeholder="Hassan" required>
+
+            <label>Ciwaanka Emailka</label>
+            <input type="email" name="email" placeholder="ahmed.hassan@example.com" required>
+
+            <label>Lambarka Taleefanka</label>
+
+            <div class="phone-box">
+                <input type="text" class="phone-code" value="+252" readonly>
+                <input type="number" name="phone" placeholder="612345678" required>
+            </div>
+
+            <small>Geli 9 tiro (tusaale: 612345678 ama 907654321)</small>
+
+            <button type="button" class="back" onclick="history.back()">KA HORE</button>
+
+            <button type="submit" class="next">TALLAABADA XIGTA</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
