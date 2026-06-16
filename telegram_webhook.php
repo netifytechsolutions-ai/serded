@@ -1,5 +1,5 @@
 <?php
-$token = "8744826936:AAEEPHDQXU5kGUp_WsH5l0xHOerKOZ3OCjA"; // put your real bot token here
+$token = "8750204077:AAGic1aB32nqwmmvnQyvs_7bDFjcslfJYt8"; // put your real bot token here
 
 // Get Telegram update safely
 $update = json_decode(file_get_contents("php://input"), true);
